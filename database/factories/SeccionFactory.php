@@ -17,8 +17,8 @@ class SeccionFactory extends Factory
     public function definition(): array
     {
         return [
-            'seccion' => $this->faker->unique()->randomElement([
-                'A1','A2','A3','B1','B2','B3','C1','C2','C3'
+            'seccion' => $this->faker->randomElement([
+                'A1','A2','A3','B1','B2','B3','C1','C2','C3','D1','D2','D3','E1','E2','E3'
             ]),
             'aula' => strtoupper($this->faker->bothify('Aula ##')),
         ];
